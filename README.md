@@ -1,38 +1,30 @@
-# SmartBudget - Proyecto Módulo 3
+# Proyecto Módulo 3 - SmartBudget
 
-## Objetivo
-Desarrollar una landing page responsiva para SmartBudget aplicando:
-- HTML5 semántico
-- Metodología CSS: BEM
-- SASS modular
-- Layout responsivo priorizando Flexbox
-- Integración de Bootstrap 4 (componentes)
+Este es mi proyecto final para el módulo "Desarrollo de la Interfaz de Usuario Web". Es una *landing page* responsiva para una aplicación de finanzas llamada SmartBudget.
 
-## Metodología CSS (BEM)
-Se utilizó BEM para mantener orden y escalabilidad:
-- Bloque: sb-hero
-- Elemento: sb-hero__title
-- Modificador: sb-card--dark
 
-## Estructura SASS
-Estructura modular por carpetas:
-- base: variables, mixins, reset, globals
-- layout: secciones principales
-- components: piezas reutilizables (botón, card, form, mock)
+## Tecnologías utilizadas
+- HTML5
+- SASS (SCSS)
+- CSS3 (Flexbox)
+- Bootstrap 4.6
+- Font Awesome 5 (Íconos)
 
-Se emplea @use/@forward (estándar actual de Sass), evitando la deprecación de @import.
+## Justificación Metodológica
 
-## Layout Responsivo
-- Secciones implementadas principalmente con Flexbox (display:flex + wrap).
-- Bootstrap se usa para navbar, cards, grid (row/col) y componentes (modal/carrusel/form).
+Para armar este proyecto, tomé las siguientes decisiones prácticas basándome en lo aprendido en el curso:
 
-## Bootstrap 4 (componentes usados)
-- Navbar (header)
-- Cards (soluciones)
-- Carousel (testimonios)
-- Modal (demo)
-- Form controls (contacto)
+**1. Organización de SASS**
+En lugar de usar el patrón 7-1 completo, que me parecía demasiado grande para una sola página, decidí simplificar la estructura en tres carpetas principales:
+- `/base`: Para reset, tipografías y variables de color.
+- `/layout`: Para las secciones grandes de la página (header, hero, footer).
+- `/components`: Para los elementos pequeños que se repiten (botones, tarjetas).
 
-## Compilación SASS
-Compilación en modo watch, sin sourcemap:
-sass --watch scss/main.scss css/styles.css --no-source-map
+**2. Metodología BEM**
+Utilicé BEM (Block, Element, Modifier) para nombrar mis clases de CSS. Esto me ayudó mucho a mantener el orden en el código y asegurarme de que mis estilos no chocaran con los que trae Bootstrap por defecto.
+
+**3. Uso de Bootstrap**
+Aproveché Bootstrap 4 principalmente para la estructura responsiva (el sistema de grillas) y para los componentes más complejos de armar desde cero, como el menú de navegación que colapsa en celulares, el carrusel de testimonios y la ventana modal del botón "Ver demo". 
+
+**4. Diseño visual**
+Me basé en el boceto base del proyecto, pero decidí aplicar una paleta de colores con tonos claros y azules, además de incorporar íconos gratuitos, para que la página se viera más limpia y parecida a una aplicación financiera real.

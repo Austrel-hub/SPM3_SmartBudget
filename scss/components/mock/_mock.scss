@@ -2,48 +2,76 @@
 
 .sb-mock {
   width: 100%;
-  max-width: 560px;
+  max-width: 500px;
   border-radius: $sb-radius-lg;
-  background: #f5f6f7;
+  background: #ffffff;
   overflow: hidden;
-  box-shadow: $sb-shadow;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+  margin-left: auto;
 
   &__top {
     height: 42px;
-    background: #e3e6ea;
+    background: #f1f5f9;
     display: flex;
     align-items: center;
     gap: 8px;
-    padding: 0 14px;
+    padding: 0 16px;
+    border-bottom: 1px solid $sb-border;
   }
 
   &__dot {
-    width: 10px;
-    height: 10px;
+    width: 12px;
+    height: 12px;
     border-radius: 50%;
-    background: #b9bec4;
+    &.red { background: #ef4444; }
+    &.yellow { background: #f59e0b; }
+    &.green { background: #10b981; }
   }
 
   &__body {
-    padding: 16px;
+    padding: 24px;
   }
 
-  &__row {
+  &__stats {
     display: flex;
-    gap: 12px;
-    margin-bottom: 14px;
+    gap: 16px;
+    margin-bottom: 24px;
   }
 
-  &__card {
-    flex: 1 1 0;
-    height: 70px;
-    border-radius: 14px;
-    background: #e9ecef;
+  &__stat {
+    flex: 1;
+    background: #f8fafc;
+    padding: 16px;
+    border-radius: $sb-radius-md;
+    border: 1px solid $sb-border;
+    display: flex;
+    flex-direction: column;
+
+    &-title {
+      font-size: 0.75rem;
+      color: $sb-muted;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    &-value {
+      font-size: 1.25rem;
+      font-weight: 800;
+      margin-top: 4px;
+    }
   }
 
   &__chart {
-    height: 140px;
-    border-radius: 14px;
-    background: #e9ecef;
+    height: 120px;
+    border-bottom: 2px solid $sb-border;
+    padding-bottom: 4px;
+  }
+
+  &__bar {
+    width: 12%;
+    background-color: $sb-primary;
+    border-radius: 4px 4px 0 0;
+    transition: height 0.3s ease;
   }
 }

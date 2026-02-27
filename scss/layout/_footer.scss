@@ -3,9 +3,9 @@
 .sb-footer {
   padding: 22px 0;
   border-top: 1px solid $sb-border;
-  background: #050505;
+  background: #ffffff;
 
   &__text {
-    color: rgba(255, 255, 255, 0.7);
+    color: $sb-muted;
   }
 }

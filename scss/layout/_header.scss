@@ -2,8 +2,9 @@
 
 .sb-header {
   &__nav {
-    background: #050505;
+    background: #ffffff;
     border-bottom: 1px solid $sb-border;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
   }
 
   &__brand {
@@ -13,24 +14,29 @@
   }
 
   &__logo {
-    width: 22px;
-    height: 22px;
-    border-radius: 50%;
-    border: 2px solid #1f6feb;
-    position: relative;
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    background: $sb-primary;
+    color: #ffffff;
+    font-size: 14px;
   }
 
   &__name {
     @include sb-title;
-    font-size: 1.05rem;
+    font-size: 1.2rem;
+    color: $sb-panel;
   }
 
   &__menu .nav-link {
-    color: rgba(255, 255, 255, 0.72);
+    color: $sb-muted;
+    font-weight: 600;
+    margin: 0 8px;
+    transition: color 0.2s ease;
   }
 
   &__menu .nav-link:hover {
-    color: #fff;
+    color: $sb-primary;
   }
 
   &__actions {

@@ -1,16 +1,30 @@
+@use "sass:color";
 @use "../../base" as *;
 
 .sb-btn {
-  border-radius: 12px;
-  padding: 10px 16px;
+  border-radius: 8px;
+  padding: 12px 24px;
   font-weight: 600;
+  transition: all 0.2s ease;
   @include sb-focus;
 
   &--primary {
-    color: #111;
+    background-color: $sb-primary;
+    border-color: $sb-primary;
+    color: #ffffff;
+    
+    &:hover {
+      background-color: color.scale($sb-primary, $lightness: -10%);
+      border-color: color.scale($sb-primary, $lightness: -10%);
+      color: #ffffff;
+      transform: translateY(-2px);
+    }
   }
 
   &--ghost {
     background: transparent;
+    &:hover {
+      transform: translateY(-2px);
+    }
   }
 }

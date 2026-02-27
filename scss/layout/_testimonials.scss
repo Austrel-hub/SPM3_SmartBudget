@@ -14,7 +14,8 @@
 
 .sb-testimonials__card {
   @include sb-panel;
-  background: $sb-panel-2;
+  background: #ffffff;
+  border: 1px solid $sb-border;
   padding: 26px 18px;
   text-align: center;
   max-width: 720px;
@@ -26,8 +27,11 @@
   height: 84px;
   border-radius: 18px;
   background: #f5f6f7;
-  opacity: 0.85;
+  color: #8c98a4;
   margin: 0 auto 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .sb-testimonials__quote {

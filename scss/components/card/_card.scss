@@ -7,16 +7,20 @@
   &--dark {
     @include sb-panel;
     background: $sb-panel-2;
-    color: $sb-text;
+    border-color: $sb-border-light;
+    color: $sb-text-light;
   }
 
   &__icon {
     width: 54px;
     height: 54px;
     border-radius: 14px;
-    background: #f5f6f7;
-    opacity: 0.85;
+    background: rgba(255, 255, 255, 0.08);
+    color: #ffffff;
     margin-bottom: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   &__title {
@@ -25,7 +29,7 @@
   }
 
   &__text {
-    color: $sb-muted;
+    color: $sb-muted-light;
     margin: 0;
   }
 }

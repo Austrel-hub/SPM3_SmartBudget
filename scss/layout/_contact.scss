@@ -3,12 +3,15 @@
 .sb-contact {
   background: $sb-panel;
   padding: 12px 0 46px;
+  color: $sb-text-light;
 
   &__panel {
     @include sb-panel;
-    background: $sb-panel;
+    background: #ffffff;
+    border-color: transparent;
     padding: 22px;
     max-width: 780px;
     margin: 0 auto;
+    color: $sb-text;
   }
 }

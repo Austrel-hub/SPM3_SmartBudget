@@ -1,17 +1,23 @@
-$sb-bg: #000;
-$sb-panel: #1e2326;
-$sb-panel-2: #15181a;
-$sb-border: rgba(255, 255, 255, 0.12);
+/* Variables y paleta de colores del proyecto */
+$sb-bg: #f8fafc;
+$sb-panel: #0f172a;
+$sb-panel-2: #1e293b;
+$sb-primary: #2563eb;
 
-$sb-text: #f2f4f6;
-$sb-muted: rgba(242, 244, 246, 0.75);
+$sb-border: #e2e8f0;
+$sb-border-light: rgba(255, 255, 255, 0.08);
 
-$sb-radius-lg: 26px;
-$sb-radius-md: 18px;
+$sb-text: #334155;
+$sb-text-light: #f8fafc;
+$sb-muted: #64748b;
+$sb-muted-light: #94a3b8;
 
-$sb-shadow: 0 10px 30px rgba(0, 0, 0, 0.45);
+$sb-radius-lg: 20px;
+$sb-radius-md: 12px;
+
+$sb-shadow: 0 10px 25px -5px rgba(15, 23, 42, 0.05);
+$sb-shadow-hover: 0 20px 25px -5px rgba(15, 23, 42, 0.1);
 
 $sb-gap: 28px;
-
 $bp-md: 768px;
 $bp-lg: 992px;
