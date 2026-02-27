@@ -1,0 +1,26 @@
+@use "variables" as *;
+@use "mixins" as *;
+
+.sb-page {
+  background: $sb-bg;
+  color: $sb-text;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+}
+
+.sb-main {
+  min-height: 100vh;
+}
+
+.sb-section-title {
+  @include sb-title;
+  text-align: center;
+  margin: 56px 0 28px;
+  font-size: 1.8rem;
+}
+
+@media (max-width: $bp-md) {
+  .sb-section-title {
+    margin: 44px 0 22px;
+    font-size: 1.55rem;
+  }
+}

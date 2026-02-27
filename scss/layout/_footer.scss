@@ -1,0 +1,11 @@
+@use "../base" as *;
+
+.sb-footer {
+  padding: 22px 0;
+  border-top: 1px solid $sb-border;
+  background: #050505;
+
+  &__text {
+    color: rgba(255, 255, 255, 0.7);
+  }
+}

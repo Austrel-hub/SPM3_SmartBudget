@@ -1,0 +1,38 @@
+@use "../base" as *;
+
+.sb-how {
+  padding: 28px 0 6px;
+
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    flex: 1 1 240px;
+    text-align: center;
+    padding: 18px 14px;
+  }
+
+  &__title {
+    @include sb-title;
+    margin: 14px 0 8px;
+    font-size: 1.05rem;
+  }
+
+  &__text {
+    color: $sb-muted;
+    margin: 0;
+  }
+
+  &__icon {
+    width: 58px;
+    height: 58px;
+    border-radius: 14px;
+    margin: 0 auto;
+    background: #f5f6f7;
+    opacity: 0.82;
+  }
+}

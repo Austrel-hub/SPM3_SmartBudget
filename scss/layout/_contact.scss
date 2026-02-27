@@ -1,0 +1,14 @@
+@use "../base" as *;
+
+.sb-contact {
+  background: $sb-panel;
+  padding: 12px 0 46px;
+
+  &__panel {
+    @include sb-panel;
+    background: $sb-panel;
+    padding: 22px;
+    max-width: 780px;
+    margin: 0 auto;
+  }
+}

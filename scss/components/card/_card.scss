@@ -1,0 +1,31 @@
+@use "../../base" as *;
+
+.sb-card {
+  border-radius: $sb-radius-lg;
+  border: 1px solid $sb-border;
+
+  &--dark {
+    @include sb-panel;
+    background: $sb-panel-2;
+    color: $sb-text;
+  }
+
+  &__icon {
+    width: 54px;
+    height: 54px;
+    border-radius: 14px;
+    background: #f5f6f7;
+    opacity: 0.85;
+    margin-bottom: 14px;
+  }
+
+  &__title {
+    @include sb-title;
+    margin-bottom: 8px;
+  }
+
+  &__text {
+    color: $sb-muted;
+    margin: 0;
+  }
+}

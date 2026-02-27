@@ -1,0 +1,49 @@
+@use "../../base" as *;
+
+.sb-mock {
+  width: 100%;
+  max-width: 560px;
+  border-radius: $sb-radius-lg;
+  background: #f5f6f7;
+  overflow: hidden;
+  box-shadow: $sb-shadow;
+
+  &__top {
+    height: 42px;
+    background: #e3e6ea;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 0 14px;
+  }
+
+  &__dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #b9bec4;
+  }
+
+  &__body {
+    padding: 16px;
+  }
+
+  &__row {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 14px;
+  }
+
+  &__card {
+    flex: 1 1 0;
+    height: 70px;
+    border-radius: 14px;
+    background: #e9ecef;
+  }
+
+  &__chart {
+    height: 140px;
+    border-radius: 14px;
+    background: #e9ecef;
+  }
+}

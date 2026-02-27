@@ -1,0 +1,19 @@
+@use "variables" as *;
+
+@mixin sb-panel {
+  border: 1px solid $sb-border;
+  border-radius: $sb-radius-lg;
+  box-shadow: $sb-shadow;
+}
+
+@mixin sb-title {
+  font-weight: 700;
+  letter-spacing: 0.2px;
+}
+
+@mixin sb-focus {
+  &:focus {
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.18);
+  }
+}
