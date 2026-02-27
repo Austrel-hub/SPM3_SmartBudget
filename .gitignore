@@ -1,17 +1,2 @@
 *.code-workspace
 *.excalidraw
-
-# VSCode
-*.code-workspace
-.vscode/
-
-# OS
-.DS_Store
-Thumbs.db
-
-# Sass
-.sass-cache/
-*.map
-
-# Node (si lo usa)
-node_modules/
